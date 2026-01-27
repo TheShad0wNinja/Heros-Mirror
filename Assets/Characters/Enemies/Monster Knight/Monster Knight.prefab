@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08635f455011d4f7b905944dfe44279a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitData: {fileID: 11400000, guid: 1eadffeb9ff234557b09f731d4f65b46, type: 2}
+  unitData: {fileID: 11400000, guid: 26dab097d710847048c13ef1a00ee359, type: 2}
   skills:
   - {fileID: 11400000, guid: 8b381fbc0ad734f53bfe5a573bd4d0f7, type: 2}
   - {fileID: 11400000, guid: 9a1fdc48775a04de0b1cc675c22a9d85, type: 2}

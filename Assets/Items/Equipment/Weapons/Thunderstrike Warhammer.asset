@@ -18,11 +18,11 @@ MonoBehaviour:
   pixelArt: {fileID: 636941334, guid: f4dd604b6ce023544af386c7618947d9, type: 3}
   image: {fileID: 636941334, guid: f4dd604b6ce023544af386c7618947d9, type: 3}
   itemType: 4
-  rarity: 1
+  rarity: 4
   health: 0
   healthRegenerationRate: 0
   mana: 0
   manaRegenrationRate: 0
   shield: 0
-  attackBonus: 15
-  criticalChance: 5
+  attackBonus: 6
+  criticalChance: 80

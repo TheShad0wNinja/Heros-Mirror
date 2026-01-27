@@ -262,7 +262,7 @@ public abstract class Unit : MonoBehaviour
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, 0, -16);
+            transform.rotation = Quaternion.Euler(0, 0, IsEnemy ? -16 : 16);
             yield return new WaitForSeconds(0.5f);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }

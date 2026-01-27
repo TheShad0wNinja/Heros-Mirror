@@ -52,6 +52,7 @@ public class CombatManager : MonoBehaviour
         ArrangeCharacters(playerUnits, -1, units.Count);
         ArrangeCharacters(enemyUnits, 1, units.Count);
         SetupEvents();
+        Level_UI_Manager.instance.DisableUI();
     }
 
     private void SplitUnits(List<Unit> units)
@@ -194,6 +195,8 @@ public class CombatManager : MonoBehaviour
         playerUnits.Clear();
         enemyUnits.Clear();
         Scene_Manager.Instance.UnloadAdditiveScene();
+        Level_UI_Manager.instance.EnableUI();
+        Level_UI_Manager.instance.UpdateUI();
     }
 
     private void HandlePotionSelected(Potion potion)

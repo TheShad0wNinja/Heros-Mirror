@@ -11,11 +11,18 @@ public class Level_UI_Manager : MonoBehaviour
     [SerializeField] GameObject characterInfoPrefab;
     [SerializeField] GameObject characterInfoList;
 
+    public static Level_UI_Manager instance;
+
     UI_Behaviour_Manager inventoryManager;
     Dictionary<Character, CharacterOverlayController> characterOverlays = new();
 
     void Start()
     {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(this);
+
         inventoryManager = UI_Behaviour_Manager.Instance;
         SetValues();
         UpdateUI();
@@ -32,10 +39,22 @@ public class Level_UI_Manager : MonoBehaviour
 
     public void DisableUI()
     {
-        foreach(var i in characterOverlays)
+        foreach (var i in characterOverlays)
+        {
             i.Value.gameObject.SetActive(false);
+        }
 
         textGold.gameObject.SetActive(false);
+    }
+
+    public void EnableUI()
+    {
+        foreach (var i in characterOverlays)
+        {
+            i.Value.gameObject.SetActive(true);
+        }
+
+        textGold.gameObject.SetActive(true);
     }
 
     void SetValues() 

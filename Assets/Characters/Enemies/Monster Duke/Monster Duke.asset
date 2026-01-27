@@ -19,11 +19,11 @@ MonoBehaviour:
   flipped: 1
   rarity: 1
   isEnemy: 1
-  health: 25
+  health: 20
   healthRegenerationRate: 4
   mana: 30
   manaRegenrationRate: 5
-  shield: 5
+  shield: 2
   attackBonus: 100
   baseCritChance: 10
   hasHitAnimation: 0
